@@ -1,8 +1,17 @@
-export default function CourseCard() {
+import styles from "./CourseCard.module.css";
+type CourseCardProps = {
+  title: string;
+  description: string;
+};
+
+export default function CourseCard({
+  title,
+  description,
+}: CourseCardProps) {
   return (
-    <article>
-      <h3>Introdução ao React</h3>
-      <p>Aprenda os fundamentos do React.</p>
+    <article className={styles.card}>
+      <h3>{title}</h3>
+      <p>{description}</p>
       <button>Ver curso</button>
     </article>
   );
