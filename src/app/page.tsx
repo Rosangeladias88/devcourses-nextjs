@@ -9,6 +9,7 @@ export default function Home() {
       <section>
         <h2>Cursos disponíveis</h2>
         <p>Escolha um curso e comece seus estudos.</p>
+      <div className="course-grid">
         <CourseCard
   title="Next.js"
   description="Aprenda os fundamentos do framework Next.js."
@@ -23,6 +24,7 @@ export default function Home() {
   title="SQL"
   description="Aprenda os fundamentos de bancos de dados e consultas SQL."
 />
+      </div>
       </section>
     </main>
   );
