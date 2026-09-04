@@ -1,11 +1,13 @@
+import styles from "../CoursePage.module.css";
 export default function PythonCoursePage() {
   return (
-    <main>
-      <h1>Curso de Python</h1>
+    <main className={styles.container}>
+      <h1 className={styles.title}>Curso de Python</h1>
 
-      <p>
+      <p className={styles.description}>
         Aprenda lógica de programação e desenvolva aplicações utilizando Python.
       </p>
+      <div>
 
       <h2>Conteúdo do curso</h2>
 
@@ -16,6 +18,7 @@ export default function PythonCoursePage() {
         <li>Laços de repetição</li>
         <li>Funções</li>
       </ul>
+    </div>
     </main>
   );
 }
